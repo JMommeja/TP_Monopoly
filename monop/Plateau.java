@@ -5,14 +5,14 @@ public class Plateau
 {
 	public ArrayList<Cases> cases ;
 	public ArrayList<Joueur> joueur ;
-	public Joueur J_R;
+	public static Joueur J_R;
 	public Joueur J_B;
 
 
 public Plateau()
 {
-	 J_R = new Joueur ("Joueur_Rouge" , 500);
-	 J_B = new Joueur ("Joueur_Bleu" , 500);
+	 J_R = new Joueur ("Joueur_Rouge" , 500, 1);
+	 J_B = new Joueur ("Joueur_Bleu" , 500 , 1);
 	 
 	ArrayList<Cases> cases = new ArrayList<Cases>();
 	

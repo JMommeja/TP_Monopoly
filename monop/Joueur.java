@@ -17,6 +17,8 @@ public class Joueur extends Dés {
 		numcase = 0 ;
 		}
 		this.numcase = x ;
+		
+		System.out.println(nom + " est case " + numcase ) ;
 	}
 	
 public static void AfficherStat(Joueur joueur) 
@@ -40,9 +42,10 @@ public void setArgent(int argent) {
 	this.argent = argent;
 }
 
-public Joueur(String nom ,int argent) {
+public Joueur(String nom ,int argent, int numcase) {
 	this.nom = nom ;
 	this.argent = argent ;
+	this.numcase = numcase;
 }
 }
 
