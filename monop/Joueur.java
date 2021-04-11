@@ -15,12 +15,16 @@ public class Joueur extends Dés {
 		{
 		x =	(numcase-40)-x ;
 		numcase = 0 ;
+		checkCaseGo();
 		}
 		this.numcase = x ;
 		
 		System.out.println(nom + " est case " + numcase ) ;
 	}
-	
+	public void checkCaseGo() 
+	{	
+			this.argent += 300 ;	
+	}
 public static void AfficherStat(Joueur joueur) 
 {
 	System.out.println(joueur.nom + " posséde " +joueur.argent);
