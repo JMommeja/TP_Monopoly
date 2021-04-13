@@ -16,4 +16,7 @@ public class Cases
 	{
 		this.numcase = numcase ;
 	}
+	
+	public void passage() {
+	}
 }

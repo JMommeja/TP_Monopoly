@@ -22,5 +22,6 @@ public class Dés
 	        	doubles = "V" ;
 	        }
 	        return sommedesdes ; 
+	        
 	}
 }

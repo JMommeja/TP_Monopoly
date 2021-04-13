@@ -11,19 +11,18 @@ public class Joueur extends Dés {
 	{
 		int x = 0 ;
 		x = dés();
-		if (numcase + x > 40) 
+		this.numcase += x ;
+		if (numcase >= 40) 
 		{
-		x =	(numcase-40)-x ;
-		numcase = 0 ;
+		this.numcase =(numcase-40) ;
 		checkCaseGo();
 		}
-		this.numcase = x ;
-		
 		System.out.println(nom + " est case " + numcase ) ;
 	}
 	public void checkCaseGo() 
 	{	
 			this.argent += 300 ;	
+			System.out.println(this.nom + " a gagner 200 $, il possede " +this.argent);
 	}
 public static void AfficherStat(Joueur joueur) 
 {

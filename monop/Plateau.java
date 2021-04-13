@@ -4,24 +4,29 @@ import java.util.ArrayList;
 public class Plateau 
 {
 	public ArrayList<Cases> cases ;
+	public ArrayList<CaseChance> caseChance ;
 	public ArrayList<Joueur> joueur ;
 	public static Joueur J_R;
+	
+	
 	public Joueur J_B;
+	public static CaseChance CaseChance05;
 
 
 public Plateau()
 {
-	 J_R = new Joueur ("Joueur_Rouge" , 500, 1);
+	 J_R = new Joueur ("Joueur_Rouge", 500, 1);
 	 J_B = new Joueur ("Joueur_Bleu" , 500 , 1);
 	 
 	ArrayList<Cases> cases = new ArrayList<Cases>();
+	ArrayList<CaseChance> caseChance = new ArrayList<CaseChance>();
 	
 	Cases Cases0 = new Cases(0);
 	Cases Cases1 = new Cases(1);
 	Cases Cases2 = new Cases(2);
 	Cases Cases3 = new Cases(3);
 	Cases Cases4 = new Cases(4);
-	Cases Cases5 = new Cases(5);
+	CaseChance05  = new CaseChance(5);
 	Cases Cases6 = new Cases(6);
 	Cases Cases7 = new Cases(7);
 	Cases Cases8 = new Cases(8);
@@ -63,7 +68,7 @@ public Plateau()
 	cases.add(Cases2);
 	cases.add(Cases3);
 	cases.add(Cases4);
-	cases.add(Cases5);
+	cases.add(CaseChance05);
 	cases.add(Cases6);
 	cases.add(Cases7);
 	cases.add(Cases8);
@@ -99,6 +104,6 @@ public Plateau()
 	cases.add(Cases38);
 	cases.add(Cases39);
 	cases.add(Cases40);
-		
+	
 }
 }
